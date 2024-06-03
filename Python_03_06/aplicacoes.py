@@ -29,6 +29,19 @@ print("Maior valor 3:", mel)
 #encontrar a localização de um determinado elemento dentro de uma lista
 frutas = ["abacaxi", "maçã", "pêra", "mamão", "uva", "melancia"]
 elemento = "melancia"
+achado = False
+
+for i in range(len(frutas)):
+    achado = frutas[i] == elemento
+    if achado:
+        break
+
+if achado:
+    print("elemento encontrado no índice:", i)
+else:
+    print("NÃO ENCONTRADO!!!")
+
+
 
 
 
